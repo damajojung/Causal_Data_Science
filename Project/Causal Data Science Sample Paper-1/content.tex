@@ -1,0 +1,60 @@
+\section{Introduction and Motivation (10\%)}
+In this section, you will introduce the datasets, the assumptions and the causal questions you are investigating. This will be 10\% of the grade of the report. In particular:
+\begin{itemize}
+    \item Describe your dataset (observational, interventional)
+    \item Describe the causal questions you wish to answer
+    \item Describe the assumptions of your dataset
+\end{itemize}
+
+
+\section{Exploratory Data Analysis (15\%)}
+In this section you will do exploratory data analysis as shown in Tutorial 2 (or more). This will be 15\% of the grade of the report. In particular you can discuss:
+\begin{itemize}
+    \item Testing correlation / dependence for the variables in the dataset;
+    \item \emph{Optional:} Conditional independence analysis;
+    \item Discussing the true causal graph of the dataset, if it's known, and otherwise a reasonable guess.
+\end{itemize}
+
+
+\section{Identifying Estimands (20\%)}
+
+Here you should identify possible adjustment sets using:
+\begin{itemize}
+    \item Backdoor criterion
+    \item Frontdoor criterion
+    \item Instrumental variables,
+\end{itemize}
+as per Tutorials 3 and 4.
+This will be 20\% of the grade of the report.
+
+\section{Estimating Causal Effect (10\%)}
+
+Apply and explain different causal estimate methods (linear, inverse propensity weighting, two-stage linear regression, etc.) to your previously identified estimands, as shown in Tutorial 4.
+This will be 10\% of the grade of the report.
+
+\section{Causal Discovery (20\%)}
+
+In this section you will try out the two types of algorithms for learning causal graphs (score-based and constraint-based) that will be shown in Tutorials 5 and 6.
+This will be 20\% of the grade of the report.
+
+\begin{itemize}
+    \item Run a constraint-based algorithm (e.g. PC) and a score-based algorithm (e.g. GES) on your data, and report back any identifiable causal relations.
+    \item \emph{Optional:}  If you cannot find any identifiable causal relation or just want to test the algorithms further, simulate some data that resemble your real data (but maybe with less edges).
+\end{itemize}
+
+\section{Validation and Sensitivity analysis (10\%)}
+
+In this section you will try out different ways to validate your results and do sensitivity analysis of the methods. 
+This will be 10\% of the grade of the report.
+
+\begin{itemize}
+    \item  \emph{Optional:} If your dataset includes interventional data, check that the estimated causal effects from the observational data are reflected in the interventional data.
+    \item Report using some of the results of the refutation strategies implemented in DoWhy and interpret what they mean.
+    \item Try experimenting with graphs in which some of the edges are dropped, and see how the results in Section 3 and 4 change.
+    \item Try relaxing some of the assumptions you discussed in the Introduction, e.g. try to see the effect on not observing a certain variable.
+\end{itemize}
+
+
+
+\section{Discussion (10\%)}
+In this section you will discuss the results of the previous sections and explain if they do answer the causal questions you described in the Introduction. You can also elaborate on the results you observed in the validation and discuss if the assumptions you had made initially were realistic.

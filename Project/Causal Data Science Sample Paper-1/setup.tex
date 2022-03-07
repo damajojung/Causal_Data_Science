@@ -1,0 +1,40 @@
+\documentclass[sigconf]{acmart}
+
+\usepackage{booktabs}
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+
+% \graphicspath{ {media/} } 
+
+\begin{document}
+\title{Causal Data Science Report Template - Your Title Here}
+
+\author{Your name}
+% \authornote{Sample author note.}
+\affiliation{
+  \institution{University of Amsterdam}
+  \city{Amsterdam} 
+  \country{The Netherlands}
+  }
+\email{Your email address}
+
+
+\begin{abstract}
+Write the abstract here (max 250 words).
+You will describe shortly the dataset and causal questions you were investigating, as well as the results that you obtained in each of the Sections.
+This will be \textbf{5\%} of the grade of the report, and should not exceed 250 words.
+\textcolor{red}{Important: You have maximum 4000 words (more or less 8 pages, but this allows a lot more space for your Figures)}
+
+\end{abstract}
+
+
+% \keywords{keywords, belong, here, with, commas, like, this}
+
+\maketitle
+\pagestyle{plain} % removes running headers
+\input{content}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
