@@ -88,4 +88,12 @@ graph [
     source 10
     target 8
   ]
+  edge [
+    source 11
+    target 10
+  ]
+  edge [
+    source 11
+    target 8
+  ]
 ]
